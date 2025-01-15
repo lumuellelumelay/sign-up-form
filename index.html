@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>sign-up form</title>
+</head>
+<body>
+    <div class="logo-sidebar">
+        <div class="logo">
+            <img src="img/odin-lined.png" alt="Odin logo">
+            <p>ODIN</p>
+        </div>
+        <div class="credits">
+            <p>Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Unsplash</a></p>
+        </div>
+    </div>
+    <div class="form-container">
+        <div class="section-one">
+            <div class="section-one-text-one section-one-text">
+                <p>This is not a real online service! You know you need something like this in your life
+                    to help you realize your deepest dreams.
+                </p>
+                <p>
+                    Sign up <em>now</em> to get started.
+                </p>
+            </div>
+            <div class="section-one-text-two section-one-text">
+                <p>You <em>know</em> you want to.</p>
+            </div>
+        </div>
+
+        <form class="form-wrapper" action="#" method="post">
+            <div class="section-two">
+                <p>Let's do this!</p>
+                <div class="inputs">
+                    <label for="first-name">FIRST NAME</label>
+                    <input type="text" id="first-name" name="first-name" pattern="[a-zA-Z]+" placeholder="First Name">
+                </div>
+
+                <div class="inputs">
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" id="last-name" name="last-name" pattern="[a-zA-Z]+" placeholder="Last Name">
+                </div>
+
+                <div class="inputs">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" name="email" placeholder="Email">
+                </div>
+
+                <div class="inputs">
+                    <label for="phone-number">PHONE NUMBER</label>
+                    <input type="text" id="phone-number" name="phone-number" pattern="[0-9]+" minlength="11" maxlength="11" placeholder="Phone Number">
+                </div>
+                
+                <div class="inputs">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password" name="password" placeholder="Password">
+                </div>
+
+                <div class="inputs">
+                    <label for="confirm-password">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password">
+                </div>
+             </div>
+
+            <div class="section-three">
+                <button type="submit">Create Account</button>
+                <p class="have-an-account">Already have an account? <a href="#">Log in</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
